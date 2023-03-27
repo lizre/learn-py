@@ -1,0 +1,42 @@
+
+{
+	"name": "Python", // name of the Devcontainer, displayed in VS Code
+	"build": { // parameters for the `docker build` process (dockerfile --> image)
+				// this would be like if you ran `docker build --build-arg` from the command line
+		"dockerfile": "Dockerfile", // path to your Dockerfile
+		"context": "..", // the "build context": the directory that contains the files to be built into the image
+		"args": { "VARIANT": "3.7" }
+		// this VARIANT can be different than that in the dockerfile.
+		// the reason is that dockerfile says defaults.
+		// you can override those defaults when you're building the image, like `docker build --build-arg VARIANT=3.8`
+		// which is what this devcontainer.json does. the stuff in "args" here would be what comes after --build-arg.
+		// i dont know why you'd ever do this, though. you'd just change the dockerfile?
+	},	
+
+	// default container settings values. 
+	// will be created when container is created.
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"python.pythonPath": "/usr/local/bin/python",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+		"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+		"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+		"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
+		"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+		"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
+		"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
+		"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
+		"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint"
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"ms-python.python" // extension ID for the msft Python extension for VS Code. provides Python language support
+	]
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+		
+}
