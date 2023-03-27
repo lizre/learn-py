@@ -1,5 +1,5 @@
 {
-    "editor.fontSize": 16,
+    "editor.fontSize": 35,
     "[python]": {
         "editor.defaultFormatter": null,
         "editor.formatOnSave": true
