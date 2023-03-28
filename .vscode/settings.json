@@ -1,10 +1,5 @@
 {
-    "editor.fontFamily": "Almendra",
-    "[python]": {
-        "editor.defaultFormatter": null,
-        "editor.formatOnSave": true
-    },
-    "python.testing.unittestEnabled": false,
+    "editor.fontSize": 35,
     "python.testing.pytestEnabled": true,
     "python.defaultInterpreterPath": "python",
 }
