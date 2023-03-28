@@ -2,7 +2,6 @@
 # FROM: 
 # means the "base image"
 ##############################
-
 ARG VARIANT="3.7"
 FROM mcr.microsoft.com/vscode/devcontainers/python:0.204.6-${VARIANT}
 
