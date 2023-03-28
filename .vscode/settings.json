@@ -1,5 +1,4 @@
 {
-    "editor.fontSize": 35,
     "python.testing.pytestEnabled": true,
     "python.defaultInterpreterPath": "python",
 }
