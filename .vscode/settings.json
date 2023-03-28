@@ -1,5 +1,5 @@
 {
-    "editor.fontSize": 35,
+    "editor.fontFamily": "Almendra",
     "[python]": {
         "editor.defaultFormatter": null,
         "editor.formatOnSave": true
