@@ -7,9 +7,8 @@ def check_secret_characteristics():
     Checks that we have a secret accessible to this codespace.
     """
     secret = os.environ['NOT_SO_SECRET']
-    assert secret is not None, "AIP_API_KEY_TEMPORARY is not set"
-    assert secret.isalnum(), "AIP_API_KEY_TEMPORARY is not alphanumeric"
-    assert len(secret) > 0, "AIP_API_KEY_TEMPORARY is not >0 characters long"
+    assert secret is not None, "secret is not set"
+    assert len(secret) > 0, "secret is not >0 characters long"
 
 
 def check_pip():

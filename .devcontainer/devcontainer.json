@@ -37,6 +37,7 @@
 	]
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+	, "onCreateCommand": "python3 .devcontainer/test_codespace.py"
+
 		
 }
