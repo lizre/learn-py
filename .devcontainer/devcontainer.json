@@ -36,7 +36,6 @@
 		"ms-python.python" // extension ID for the msft Python extension for VS Code. provides Python language support
 	]
 
-	// Use 'postCreateCommand' to run commands after the container is created.
 	, "onCreateCommand": "python3 .devcontainer/test_codespace.py"
 
 		
